@@ -11,7 +11,7 @@ Add to an Elixir project as a Git Submodule
 
 ```
 > cd <myproject>
-> git submodule add git@github.com:andyl/cicd_ex.git .github`
+> git submodule add git@github.com:andyl/ci_ex.git .github`
 ```
 
 | Command                                    | Note                                     |
