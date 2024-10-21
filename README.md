@@ -1,6 +1,11 @@
-# cicd_ex
+# ci_ex
 
-CICD for Elixir Projects
+CI for Elixir Projects
+
+These github workflows verify that: 
+- all tests pass 
+- all code is formatted 
+- commit messages are 'Conventional Commit' compliant 
 
 Add to an Elixir project as a Git Submodule 
 
@@ -17,3 +22,5 @@ Add to an Elixir project as a Git Submodule
 | git config submodule.recurse true          | Configure 'recurse=true' for your repo   |
 | git config --global submodule.recurse true | Configure globally                       |
 
+Use `https://github.com/zachdaniel/git_ops` at release time to auto-update
+CHANGELOG, README, mix.exs and to tag a new version number.
