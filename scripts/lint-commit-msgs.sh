@@ -11,7 +11,9 @@ error=0
 
 # Check each commit message
 while read -r commit_message; do
-  if ! [[ "$commit_message" =~ $conventional_commit_regex ]]; then
+  if ! [[ -z "$commit_message" || "$commit_message" =~ $conventional_commit_regex ]]; then
+    echo "HEY"
+    echo ">>$commit_message<<"
     echo "Error: Commit message does not follow Conventional Commits standard: $commit_message"
     error=1
   fi
